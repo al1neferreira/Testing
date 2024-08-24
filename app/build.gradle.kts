@@ -27,11 +27,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
     testOptions {
         unitTests {
@@ -59,5 +59,12 @@ dependencies {
     testImplementation ("androidx.test.ext:truth:1.4.0")
     testImplementation ("com.google.truth:truth:1.1.3")
     testImplementation("org.robolectric:robolectric:4.13")
+
+    // Optional -- Mockito framework
+    testImplementation ("org.mockito:mockito-core:4.8.0")
+    // Optional -- mockito-kotlin
+    testImplementation ("org.mockito.kotlin:mockito-kotlin:5.4.0")
+    // Optional -- Mockk framework
+    testImplementation ("io.mockk:mockk:1.13.12")
 
 }
