@@ -65,6 +65,6 @@ dependencies {
     // Optional -- mockito-kotlin
     testImplementation ("org.mockito.kotlin:mockito-kotlin:5.4.0")
     // Optional -- Mockk framework
-    testImplementation ("io.mockk:mockk:1.13.12")
+    testImplementation ("io.mockk:mockk:1.13.+")
 
 }
